@@ -1,0 +1,227 @@
+/* ===== RESET ===== */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* ===== BANNER (FIX) ===== */
+.banner{
+    height: 60vh;
+    background: url("https://i.pinimg.com/1200x/b5/6b/84/b56b84f643a8efba386fd42ef7cc1b1c.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* ===== BUTTON ===== */
+.container button {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 16px;
+    transition: linear 0.4s;
+}
+
+.container button:hover {
+    background-color: #c70606;
+    color: #fff;
+    border-radius: 10px;
+}
+
+/* ===== ICON ===== */
+.icon-service{
+    width: 90px;
+    height: 90px;
+    border: solid #fff 2px;
+    border-radius: 50%;
+    color: #ffff;
+}
+
+/* ===== MENU ===== */
+.menu-favorit-content {
+    transition: .3s;
+}
+
+.menu-favorit-content:hover {
+    transform: scale(1.1);
+}
+
+/* ===== SECTION ===== */
+#service{
+    background: linear-gradient(135deg, #141e30, #243b55);
+}
+
+.testimony {
+    background: linear-gradient(135deg, #141e30, #243b55);
+}
+
+/* ===== TESTIMONY ===== */
+.testimony-card {
+    background: rgba(255, 255, 255, 0.07) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    border-radius: 16px;
+    padding: 28px;
+    transition: .3s;
+    height: 100%;
+}
+
+.testimony-card:hover {
+    transform: translateY(-6px);
+    background: rgba(255, 255, 255, 0.13);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.testimony-card .quote-icon {
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.3);
+    margin-bottom: 10px;
+}
+
+.testimony-card h5 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.testimony-card .author {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.55);
+    margin-bottom: 12px;
+}
+
+.testimony-card p {
+    font-size: 0.88rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.testimony-card .stars {
+    color: #FFC107;
+    font-size: 0.85rem;
+}
+
+/* ===== SUBSCRIBE ===== */
+.subscribe-content {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* ===== PRODUK ===== */
+.produk-banner {
+    height: 50vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../image/banner.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* ===== SOSIAL ===== */
+.social-icon1,
+.social-icon2,
+.social-icon3,
+.social-icon4,
+.social-icon5 {
+    color: #000;
+    font-size: 25px;
+}
+
+.social-icon1:hover { color: red; }
+.social-icon2:hover { color: white; }
+.social-icon3:hover { color: #1DA1F2; }
+.social-icon4:hover { color: #4267B2; }
+.social-icon5:hover { color: rgb(166, 8, 98); }
+
+/* ===== FOOTER ===== */
+.footer {
+    background-color: #595959;
+    color: white;
+    margin-top: 30px; /* biar tidak nempel ke atas */
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+footer {
+    margin: 0;
+    padding-bottom: 0;
+}
+
+.footer .input-group {
+    margin-bottom: 20px;
+}
+
+/* ===== TEXT FOOTER FIX ===== */
+footer .col-md-4 p {
+    color: #ffffff !important;
+}
+
+/* ===== PROMO ANIMATION ===== */
+.promo-section {
+    animation: fadeSlideIn 0.4s ease both;
+}
+
+@keyframes fadeSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.promo-section .hovered-card {
+    opacity: 0;
+    animation: fadeSlideIn 0.4s ease forwards;
+}
+
+.promo-section .hovered-card:nth-child(1) { animation-delay: 0.05s; }
+.promo-section .hovered-card:nth-child(2) { animation-delay: 0.1s; }
+.promo-section .hovered-card:nth-child(3) { animation-delay: 0.15s; }
+.promo-section .hovered-card:nth-child(4) { animation-delay: 0.2s; }
+.promo-section .hovered-card:nth-child(5) { animation-delay: 0.25s; }
+.promo-section .hovered-card:nth-child(6) { animation-delay: 0.3s; }
+.promo-section .hovered-card:nth-child(7) { animation-delay: 0.35s; }
+.promo-section .hovered-card:nth-child(8) { animation-delay: 0.4s; }
+
+/* ===== BUTTON FILTER ===== */
+.filter-btn {
+  transition: 
+    background-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.15s ease,
+    box-shadow 0.25s ease;
+}
+
+.filter-btn:active {
+  transform: scale(0.95);
+}
+
+.filter-btn.active {
+    box-shadow: 0 4px 14px rgba(255, 193, 7, 0.45);
+}
+
+/* ===== ANTI GAP TERAKHIR ===== */
+.container-fluid {
+    padding-bottom: 0 !important;
+}
+
+/* FIX TESTIMONY AGAR LEBIH PANJANG */
+.testimony {
+    background: linear-gradient(135deg, #141e30, #243b55);
+    padding-top: 80px;
+    padding-bottom: 120px;
+    padding: 50px 0 40px 0; /* atas 80, bawah 150 */
+    min-height: 70vh; /* bikin section minimal setinggi layar */
+}
+
+#testimony {
+    background: linear-gradient(135deg, #141e30, #243b55);
+}
+
+/* OPTIONAL biar lebih rapi */
+#testimony .container {
+    margin-bottom: 10px;
+}
